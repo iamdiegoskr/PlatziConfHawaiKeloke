@@ -1,0 +1,13 @@
+footer {
+    /*background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5372);*/
+    /*#051937 #EB1212*/
+    background-image: linear-gradient(to right, #051937, #3e205b, #850464, #c5004c, #eb1212);
+}
+
+footer a {
+    color: #fff;
+}
+
+.footer-content div {
+    margin-bottom: 12px;
+}
