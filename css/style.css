@@ -4,10 +4,19 @@ footer {
     background-image: linear-gradient(to right, #051937, #3e205b, #850464, #c5004c, #eb1212);
 }
 
+.header nav .logo-platzi img {
+    width: 90px;
+}
+
 footer a {
     color: #fff;
 }
 
 .footer-content div {
     margin-bottom: 12px;
+}
+
+.header .navbar-nav .nav-item .text-buy {
+    color: #90bf3e;
+    font-weight: bold;
 }
