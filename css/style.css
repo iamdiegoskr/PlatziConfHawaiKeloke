@@ -67,3 +67,17 @@ footer a {
 .badges span {
     padding: 6px 8px;
 }
+
+.section-place-date .container-place img {
+    width: 100%;
+    max-width: 100%;
+}
+
+main .section-place-date {
+    background: #481c5c;
+    color: #fff;
+}
+
+form .btn-speaker {
+    background: #97c93e;
+}
