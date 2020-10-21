@@ -54,3 +54,16 @@ footer a {
 .overlay .container .description-conf {
     height: inherit;
 }
+
+.overlay .container .description-conf .btn-platzi {
+    background: #97c93e;
+    color: #fff;
+}
+
+.overlay .container .description-conf .btn-platzi:hover {
+    background: #739930;
+}
+
+.badges span {
+    padding: 6px 8px;
+}
