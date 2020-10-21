@@ -20,3 +20,37 @@ footer a {
     color: #90bf3e;
     font-weight: bold;
 }
+
+.header .bg-nav-color {
+    background-color: #481c5c;
+}
+
+.section-carousel .carousel-item img {
+    max-height: 70vh;
+    object-fit: cover;
+    object-position: 0 50%;
+    filter: grayscale(20%);
+}
+
+.section-carousel .carousel {
+    position: relative;
+}
+
+.section-carousel .carousel .overlay {
+    position: absolute;
+    color: #fff;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 10;
+}
+
+.overlay .container {
+    height: 100%;
+}
+
+.overlay .container .description-conf {
+    height: inherit;
+}
