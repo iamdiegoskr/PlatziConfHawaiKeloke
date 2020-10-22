@@ -81,3 +81,12 @@ main .section-place-date {
 form .btn-speaker {
     background: #97c93e;
 }
+
+.section-forms-speaker .container abbr {
+    text-decoration: none;
+    color: #97c93e;
+}
+
+.tooltip-inner {
+    background-color: #54175e;
+}
