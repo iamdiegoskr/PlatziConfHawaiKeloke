@@ -12,34 +12,34 @@
     <title>Hello, world!</title>
 </head>
 
-<body>
-    <header class="header">
+<body data-spy="scroll" data-target="#mynavbar" data-offset="50">
+    <header class="header sticky-top">
         <nav class="navbar navbar-expand-lg navbar-dark bg-nav-color">
-            <div class="container">
+            <div class="container-fluid">
                 <a class="navbar-brand logo-platzi" href="#">
                     <img src="./assets/images/platzi-logo.png" alt="Platzi logo">
                     <span class="ml-2">Conf hawai</span>
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynavbar" aria-controls="mynavbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse text-center" id="mynavbar">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Conference</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#main-carousel">Conference</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Speakers</a>
+                            <a class="nav-link" href="#speakers">Speakers</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Place and date</a>
+                            <a class="nav-link" href="#place-date">Place and date</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Become a speaker</a>
+                            <a class="nav-link" href="#be-speaker">Become a speaker</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-buy" href="#">Buy tickets</a>
+                            <a class="nav-link text-buy" href="#" data-toggle="modal" data-target="#modal-buy-tickect">Buy tickets</a>
                         </li>
                     </ul>
                 </div>
@@ -48,7 +48,7 @@
     </header>
 
     <main>
-        <section class="section-carousel">
+        <section class="section-carousel" id="main-carousel">
             <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -85,7 +85,7 @@
                                         a los oradores de primer nivel que tenemos para ti. Te esperamos!
                                     </p>
                                     <a href="#" class="btn btn-outline-light mr-2">Quiero ser speaker</a>
-                                    <button type="button" class="btn btn-platzi">Comprar tickets</button>
+                                    <button type="button" class="btn btn-platzi" data-toggle="modal" data-target="#modal-buy-tickect">Comprar tickets</button>
                                 </div>
                             </div>
                         </div>
@@ -93,7 +93,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-cards-speakers">
+        <section class="section-cards-speakers" id="speakers">
             <div class="container mt-3 pb-2">
                 <div class="row mb-3">
                     <div class="col text-center text-uppercase">
@@ -183,7 +183,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-place-date">
+        <section class="section-place-date" id="place-date">
             <div class="container-fluid">
                 <div class="row container-place">
                     <div class="col-12 col-lg-6 pl-0 pr-0">
@@ -200,7 +200,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-forms-speaker py-4">
+        <section class="section-forms-speaker py-4" id="be-speaker">
             <div class="container">
                 <div class="row py-3">
                     <div class="col text-center text-uppercase">
@@ -293,6 +293,28 @@
     </footer>
 
 
+    <!-- Modal -->
+    <!--Aqui se configura el html del modal, es decir como queremos que se componga-->
+    <div class="modal fade" id="modal-buy-tickect" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">KELOKE</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+                </div>
+                <div class="modal-body">
+                    FLACO ES MI PERRA, NO SABE QUE ES UN CASE EN SQL
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">MATAR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/Modal-->
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
