@@ -55,7 +55,8 @@ footer a {
     height: inherit;
 }
 
-.overlay .container .description-conf .btn-platzi {
+.overlay .container .description-conf .btn-platzi,
+.btn-platzi {
     background: #97c93e;
     color: #fff;
 }
@@ -80,6 +81,11 @@ main .section-place-date {
 
 form .btn-speaker {
     background: #97c93e;
+}
+
+.section-forms-speaker {
+    padding-top: 20px;
+    padding-bottom: 120px;
 }
 
 .section-forms-speaker .container abbr {
